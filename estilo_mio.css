@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <title>CV Nombre Apellido</title>
     <link href="https://fonts.googealpis.com/css?family=Gugi" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Rubik:wght@300&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imagenes/fav_cv.jpg">
-    <link rel="stylesheet" href="mi_estilo.css" type="text/css">
+    <link rel="stylesheet" href="estilo_mio.css" type="text/css">
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Gugi', cursive;
+            background: linear-gradient(to right, #db8fea, #eacfe4);
+        }
+        div{
+            border: 2px dashed #4319ac;
+            margin: 10px;
+            padding: 5px 30px;
+            border-radius: 15px;
+            box-shadow: 10px 12px rgba(238, 47, 161, 0.94);
+        }
+        #principal{
+            width: 50px;
+            float: left;
+            border-radius: 50% ;
+        }
+
+        div.especial h3{
+            font-family: 'Rubik', sans-serif;
+            text-shadow: 10px 5px #999;
+        }
+    </style>
 </head>
 <body>
 
