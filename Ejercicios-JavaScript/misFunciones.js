@@ -90,7 +90,7 @@ function calcularProducto() {
 
     num1=document.getElementsByName("mul_num1")[0].value;
     num2=document.getElementsByName("mul_num2")[0].value;
-    document.getElementsByName("mul_total")[0].innerHTML= Number(num1)* Number(num2);
+    document.getElementsByName("mul_total")[0].innerHTML= Number(num1)*Number(num2);
 }
 
 function calcularCociente() {
@@ -98,5 +98,5 @@ function calcularCociente() {
 
     num1=Number(document.getElementsByName("div_num1")[0].value);
     num2=document.getElementsByName("div_num2")[0].value;
-    document.getElementsByName("div_total")[0].innerHTML=num1/ Number(num2);
+    document.getElementsByName("div_total")[0].innerHTML=num1/Number(num2);
 }
