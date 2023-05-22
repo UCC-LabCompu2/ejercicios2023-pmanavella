@@ -119,5 +119,5 @@ function cargarResultado() {
     can = urlComp.split("#")[1];
     un = urlComp.split("#")[2];
 
-    document.getElementById("dist").value = can + " " + 1;
+    document.getElementById("dist").value = can + " " + un;
 }
