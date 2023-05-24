@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong</title>
+    <style>
+        * {padding: 0 ; margin: 0;}
+        canvas{background: aliceblue; display: block; margin: 0 auto ;}
+    </style>
+</head>
+<body>
+<canvas id= "pongCnavas" width="480" height="320"></canvas>
+
+<script>
+    var canvas = document.getElementById("pongCanvas") ;
+    var ctx = canvas.getContext("2d") ;
+
+    var x = canvas.width/2 ;
+    var y = canvas.height-10 ;
+    var dx = 2;
+    var dy = -2 ;
+
+    var pelota = {
+        radio: 10,
+        dibujar: function () {
+            ctx.beginPath();
+            ctx.arc(x, y, this.radio, 0, 2*Math.PI);
+            ctx.fillStyle = "green" ;
+            ctx.fill() ;
+            ctx.closePath();
+        }
+    } ;
+
+    function dibujar() {
+        canvas.width = canvas.width ;
+        pelota.dibujar();
+
+        x+=dx;
+        y+=dy;
+    }
+    setInterval(dibujar,10) ;
+
+</script>
+
+</body>
+</html>
