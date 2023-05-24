@@ -102,14 +102,15 @@ function calcularCociente() {
 }
 
 function cargarWeb() {
-    var cant, unidad, urlComp;
+    var cant, unidad;
 
     cant = document.getElementById("distancia").value;
     unidad = document.getElementsByName("unidades")[0].value;
 
-    urlComp = "segundaWeb.html#" + cant + "#" + unidad;
+    const urlComp = "segundaWeb.html#" + cant + "#" + unidad;
     window.open(urlComp);
 }
+
 
 function cargarResultado() {
     var urlComp, can, un;
